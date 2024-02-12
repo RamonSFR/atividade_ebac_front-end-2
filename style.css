@@ -4,5 +4,62 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
 }
 
+:root {
+    --blue1: #3868d6;
+    --blue2: #5e8ccd;
+    --gray: #ffffffc6;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    margin-bottom: 32px;
+    background-color: var(--blue1);
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+}
+
+header nav{
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+header nav p {
+    font-weight: bold;
+}
+
+header nav ul li, header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline;
+    margin-right: 16px;
+    font-weight: 400;
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.teste1 {
+    background-color: blue;
+}
+
+.teste2 {
+    background-color: red;
+}
