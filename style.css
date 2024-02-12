@@ -75,12 +75,12 @@ header nav ul li, header nav ul li a {
     font-size: 1.75em;
     font-weight: bold;
     font-style: italic;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     color: var(--blue2);
 }
 
 .sobre-a-loja hr , #produtos hr {
-    border: 1px solid var(--blue2);
+    border: 2px solid var(--blue2);
 }
 
 .produtos {
@@ -115,4 +115,5 @@ header nav ul li, header nav ul li a {
     border-radius: 4px;
     color: #fff;
     font-size: 1em;
+    cursor: pointer;
 }
