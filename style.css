@@ -51,7 +51,7 @@ header nav ul li, header nav ul li a {
     font-weight: 400;
 }
 
-.sobre {
+#sobre {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
