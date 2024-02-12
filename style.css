@@ -32,15 +32,16 @@ header {
 }
 
 header nav{
-    font-style: italic;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #fff;
 }
 
-header nav p {
-    font-weight: bold;
+header nav h1 {
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 1.75em;
 }
 
 header nav ul li, header nav ul li a {
@@ -48,18 +49,30 @@ header nav ul li, header nav ul li a {
     text-decoration: none;
     display: inline;
     margin-right: 16px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 #sobre {
+    margin-bottom: 32px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: 300px;
+    gap: 16px;
 }
 
-.teste1 {
-    background-color: blue;
+#sobre img {
+    width: 90%;
+    overflow: hidden;
 }
 
-.teste2 {
-    background-color: red;
+.sobre-a-loja h2 , .sobre-a-loja hr{
+    font-size: 1.75em;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 16px;
+    color: var(--blue2);
+}
+
+.sobre-a-loja hr {
+    border: 1px solid var(--blue2);
 }
