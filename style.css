@@ -117,3 +117,75 @@ header nav ul li, header nav ul li a {
     font-size: 1em;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1023px) and (min-width: 641px) {
+     header > .container {
+        max-width: 800px;
+    }
+
+    .container {
+        max-width: 500px;
+    }
+
+    #sobre {
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #sobre img {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 32px;
+    }
+    .sobre-a-loja p {
+        font-size: 1.3em;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width: 640px) and (max-height: 932px) {
+    header > .container {
+        max-width: 300px;
+    }
+
+    nav ul li {
+        margin-left: 80px;
+        font-size: 0.75em;
+    }
+
+    .container {
+        max-width: 80%;
+    }
+
+    #sobre {
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sobre-a-loja p {
+        font-size: 1.25em;
+    }
+    
+    #sobre img {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 32px;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .card {
+        margin-bottom: 64px;
+    }
+}
