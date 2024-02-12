@@ -10,7 +10,12 @@
 :root {
     --blue1: #3868d6;
     --blue2: #5e8ccd;
-    --gray: #ffffffc6;
+    --blue3: #3868d6;
+    --gray: #e1e1e1c6;
+}
+
+body {
+    background-color: var(--gray);
 }
 
 .flex-center {
@@ -65,7 +70,8 @@ header nav ul li, header nav ul li a {
     overflow: hidden;
 }
 
-.sobre-a-loja h2 , .sobre-a-loja hr{
+.sobre-a-loja h2 , .sobre-a-loja hr,
+#produtos h2, #produtos hr {
     font-size: 1.75em;
     font-weight: bold;
     font-style: italic;
@@ -73,6 +79,40 @@ header nav ul li, header nav ul li a {
     color: var(--blue2);
 }
 
-.sobre-a-loja hr {
+.sobre-a-loja hr , #produtos hr {
     border: 1px solid var(--blue2);
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 16px;
+}
+
+.card {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.card img {
+    overflow: hidden;
+    width: 100%;
+}
+
+.card img, .card h3, .card p {
+    margin-bottom: 16px;
+}
+
+.card h3 {
+    font-size: 1.25em;
+}
+
+.card button {
+    width: 100%;
+    background-color: var(--blue3);
+    border: none;
+    height: 8%;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1em;
 }
